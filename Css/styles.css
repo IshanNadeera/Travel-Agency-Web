@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap');
 
 :root{
-    --MainColor: #26af79;
+    --MainColor: #ff8a1a;
+    --SecondaryColor: #448d98;
 }
 
 *{
@@ -25,23 +26,24 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 60px;
 }
 
 .btn{
     display: inline-block;
-    margin-top: 1rem;
-    background: var(--MainColor);
+    margin-top: 10px;
+    background: var(--SecondaryColor);
     color: #fff;
-    padding: .8rem 3rem;
-    border: .2rem solid var(--MainColor);
+    padding: 8px 30px;
+    border: 2px solid var(--SecondaryColor);
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 18px;
 }
 
 .btn:hover{
-    background: rgba(0, 0, 0,.1);
-    color: var(--MainColor);
+    background: var(--MainColor);
+    color: #fff;
+    border: 2px solid var(--MainColor);
 }
 
 header{
@@ -49,16 +51,16 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background: #163A5F;
+    background: var(--SecondaryColor);
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 20px 9%;
 }
 
 header .logo{
-    font-size: 2.5rem;
+    font-size: 25px;
     font-weight: bolder;
     color: #fff;
     text-transform: uppercase;
@@ -70,8 +72,8 @@ header .logo span{
 
 header .navbar a{
     color: #fff;
-    font-size: 2rem;
-    margin: 1rem;
+    font-size: 20px;
+    margin: 10px;
 }
 
 header .navbar a:hover{
@@ -79,10 +81,10 @@ header .navbar a:hover{
 }
 
 header .icon i{
-    font-size: 2.5rem;
+    font-size: 25px;
     color: #fff;
     cursor: pointer;
-    margin-right: 2rem;
+    margin-right: 20px;
 }
 
 header .icon i:hover{
@@ -94,9 +96,9 @@ header .search-bar-container{
     top: 100%;
     left: 0;
     right: 0;
-    padding: 1.5rem 2rem;
-    background: #163A5F;
-    border-top: 0.1rem solid rgba(255,255,255,.2);
+    padding: 15px 20px;
+    background: var(--SecondaryColor);
+    border-top: 10px solid rgba(255,255,255,.2);
     display: flex;
     align-items: center;
     z-index: 1001;
@@ -109,18 +111,18 @@ header .search-bar-container.active{
 
 header .search-bar-container #search-bar{
     width: 100%;
-    padding: 1rem;
+    padding: 10px;
     text-transform: none;
-    color: #163A5F;
-    font-size: 1.7rem;
-    border-radius: 0.6rem;
+    color: var(--SecondaryColor);
+    font-size: 17px;
+    border-radius: 6px;
 }
 
 header .search-bar-container label{
     color: #fff;
     cursor: pointer;
-    font-size: 3rem;
-    margin-left: 1.5rem;
+    font-size: 30px;
+    margin-left: 15px;
 }
 
 header .search-bar-container label:hover{
@@ -134,7 +136,7 @@ header .search-bar-container label:hover{
     z-index: 10000;
     min-height: 100vh;
     width: 100%;
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,28 +147,28 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container form{
-    margin: 2rem;
-    padding: 1.5rem 2rem;
-    border-radius: .5rem;
+    margin: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
     background: #fff;
-    width: 50rem;
+    width: 500px;
 }
 
 .login-form-container form h3{
-    font-size: 2.8rem;
-    color: var(--MainColor);
+    font-size: 28px;
+    color: var(--SecondaryColor);
     text-transform: uppercase;
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px 0;
 }
 
 .login-form-container form .input-box{
     width: 100%;
-    padding: 1rem;
-    font-size: 1.8rem;
+    padding: 10px;
+    font-size: 18px;
     color: #333;
-    margin: .6rem 0;
-    border: .1rem solid rgba(0,0,0,.3);
+    margin: 6px 0;
+    border: 1px solid rgba(0,0,0,.3);
     text-transform: none;
 }
 
@@ -175,11 +177,11 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container form #rememberMe{
-    margin: 2rem 0;
+    margin: 20px 0;
 }
 
 .login-form-container form label{
-    font-size: 1.5rem;
+    font-size: 15px;
 }
 
 .login-form-container form .btn{
@@ -188,25 +190,25 @@ header .search-bar-container label:hover{
 }
 
 .login-form-container form p{
-    padding: .5rem 0;
-    font-size: 1.5rem;
+    padding: 5px 0;
+    font-size: 15px;
     color: #555;
 }
 
 .login-form-container form p a{
-    color: var(--MainColor);
+    color: var(--SecondaryColor);
 }
 
 .login-form-container form p a:hover{
-    color: #163A5F;
+    color: var(--MainColor);
     text-decoration: underline;
 }
 
 .login-form-container #form-closeBtn{
     position: absolute;
-    top: 2rem;
-    right: 3rem;
-    font-size: 3rem;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
     color: #fff;
     cursor: pointer;
 }
