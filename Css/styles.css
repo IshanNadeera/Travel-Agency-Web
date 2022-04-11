@@ -28,6 +28,12 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
 }
+
+/*Section*/
+section{
+    padding: 20px 9%;
+}
+
 /*Button*/
 
 .btn{
@@ -226,6 +232,71 @@ header .search-bar-container label:hover{
     display: none;
 }
 
+/*Home Section*/
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 45px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 5px rgba(0,0,0,.2);
+}
+
+.home .content p{
+    font-size: 25px;
+    color: #fff;
+    padding: 25px 0;
+}
+
+.home .img-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .controls{
+    padding: 10px;
+    border-radius: 50px;
+    background: rgba(0,0,0,.6);
+    position: relative;
+    top: 100px;
+}
+
+.home .controls .img-btn{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.home .controls .img-btn.active{
+    background: var(--MainColor);
+}
+
+.home .controls .img-btn:hover{
+    background: var(--SecondaryColor);
+}
+
 /*------------------------------------------------------------------------------------*/
 
 
@@ -260,6 +331,10 @@ header .search-bar-container label:hover{
 
 @media (max-width: 991px){
     header{
+        padding: 20px;
+    }
+
+    section{
         padding: 20px;
     }
 }

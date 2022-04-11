@@ -5,6 +5,7 @@ let loginForm = document.querySelector('.login-form-container');
 let formCloseBtn = document.querySelector('#form-closeBtn');
 let menu = document.querySelector('#menu');
 let navbar = document.querySelector('.navbar');
+let imgBtn = document.querySelectorAll('.img-btn');
 
 //Hide search box when scroll
 window.onscroll = () =>{
@@ -40,4 +41,15 @@ formBtn.addEventListener('click', () =>{
 formCloseBtn.addEventListener('click', () =>{
     //hide login form
     loginForm.classList.remove('active');
+});
+
+//Image Slider
+
+imgBtn.forEach(btn =>{
+   btn.addEventListener('click', ()=>{
+      document.querySelector('.controls .active').classList.remove('active');
+      btn.classList.add('active');
+      let src = btn.getAttribute('data-src');
+       document.querySelector('#img-slider').src = src
+   });
 });
