@@ -3,12 +3,26 @@ let searchBar = document.querySelector('.search-bar-container');
 let formBtn = document.querySelector('#userLogin-btn');
 let loginForm = document.querySelector('.login-form-container');
 let formCloseBtn = document.querySelector('#form-closeBtn');
+let menu = document.querySelector('#menu');
+let navbar = document.querySelector('.navbar');
 
 //Hide search box when scroll
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('active');
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    loginForm.classList.remove('active');
 }
+
+//Menu View when Click Menu-icon
+menu.addEventListener('click', ()=>{
+    //Cross mark View
+   menu.classList.toggle('fa-times');
+    //show Menu
+   navbar.classList.toggle('active');
+});
+
 //Search Bar View when Click Search-icon
 searchBtn.addEventListener('click', () =>{
     //Cross mark View

@@ -28,6 +28,7 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
 }
+/*Button*/
 
 .btn{
     display: inline-block;
@@ -46,6 +47,7 @@ html{
     border: 2px solid var(--MainColor);
 }
 
+/*NavBar Section*/
 header{
     position: fixed;
     top: 0;
@@ -129,6 +131,8 @@ header .search-bar-container label:hover{
     color: var(--MainColor);
 }
 
+/*Login Form Container*/
+
 .login-form-container{
     position: fixed;
     top: 120%;
@@ -211,4 +215,92 @@ header .search-bar-container label:hover{
     font-size: 30px;
     color: #fff;
     cursor: pointer;
+}
+
+#menu{
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 12px;
+    cursor: pointer;
+    display: none;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+
+/*Media Queries*/
+
+/*Responsive for 1200px width Screens*/
+
+@media (max-width: 1200px){
+
+    header .logo{
+        font-size: 20px;
+    }
+
+    header .navbar a{
+        font-size: 15px;
+    }
+
+    header .icon i{
+        font-size: 20px;
+    }
+
+    header .search-bar-container #search-bar{
+        font-size: 15px;
+    }
+
+    header .search-bar-container label{
+        font-size: 20px;
+    }
+}
+
+/*Responsive for 991px width Screens*/
+
+@media (max-width: 991px){
+    header{
+        padding: 20px;
+    }
+}
+
+/*Responsive for 991px width Screens*/
+
+@media (max-width: 768px){
+    #menu{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: var(--SecondaryColor);
+        border-top: 2px solid rgba(255,255,255,.2);
+        padding: 10px 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 15px 0;
+        background: #3a7581;
+    }
+}
+
+/*Responsive for 450px width Screens*/
+
+@media (max-width: 450px){
+
+    #menu{
+        font-size: 20px;
+        padding: 3px 5px;
+    }
 }
