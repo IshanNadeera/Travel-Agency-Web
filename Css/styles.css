@@ -310,6 +310,8 @@ header .search-bar-container label:hover{
     background: var(--SecondaryColor);
 }
 
+/*Booking Section*/
+
 .book .row{
     display: flex;
     flex-wrap: wrap;
@@ -351,6 +353,65 @@ header .search-bar-container label:hover{
     color: #444;
 }
 
+/*Packages Section*/
+
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.packages .box-container .box{
+    flex: 1 1 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+.packages .box-container .box img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.packages .box-container .box .content{
+    padding: 20px;
+}
+
+.packages .box-container .box .content h3{
+    font-size: 20px;
+    color: #222;
+}
+
+.packages .box-container .box .content h3 i{
+    color: var(--SecondaryColor);
+}
+
+.packages .box-container .box .content p{
+    font-size: 16px;
+    color: #555;
+    padding: 10px 0;
+}
+
+.packages .box-container .box .content .star i{
+    font-size: 18px;
+    color: #ffb700;
+    padding-top: 5px;
+}
+
+.packages .box-container .box .content .prices{
+    font-size: 20px;
+    padding-top: 15px;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.packages .box-container .box .content .prices span{
+    font-size: 17px;
+    color: #555;
+    text-decoration: line-through;
+}
 
 
 /*------------------------------------------------------------------------------------*/
@@ -429,6 +490,11 @@ header .search-bar-container label:hover{
 /*Responsive for 450px width Screens*/
 
 @media (max-width: 450px){
+
+    .btn{
+        padding: 8px 25px;
+        font-size: 15px;
+    }
 
     #menu{
         font-size: 20px;
