@@ -34,6 +34,19 @@ section{
     padding: 20px 9%;
 }
 
+/*Header*/
+
+.header{
+    text-align: center;
+    padding: 15px 0;
+    font-size: 35px;
+    color: var(--MainColor);
+    letter-spacing: 10px;
+    border-bottom: 1px solid var(--SecondaryColor);
+    border-top: 1px solid var(--SecondaryColor);
+}
+
+
 /*Button*/
 
 .btn{
@@ -297,6 +310,49 @@ header .search-bar-container label:hover{
     background: var(--SecondaryColor);
 }
 
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.book .row .img{
+    flex: 1 1 400px;
+}
+
+.book .row .img img{
+    width: 100%;
+    padding-top: 50px;
+}
+
+.book .row form{
+    flex: 1 1 400px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.book .row form .inputBox{
+    padding: 5px 0;
+}
+
+.book .row form .inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+    color: #666;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.book .row form .inputBox h3{
+    font-size: 18px;
+    padding: 10px 0;
+    color: #444;
+}
+
+
+
 /*------------------------------------------------------------------------------------*/
 
 
@@ -377,5 +433,17 @@ header .search-bar-container label:hover{
     #menu{
         font-size: 20px;
         padding: 3px 5px;
+    }
+
+    .home .content h3{
+        font-size: 40px;
+    }
+
+    .home .content p{
+        font-size: 20px;
+    }
+
+    .header{
+        font-size: 25px;
     }
 }
