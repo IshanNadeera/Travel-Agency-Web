@@ -358,7 +358,7 @@ header .search-bar-container label:hover{
 .packages .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 35px;
     padding-top: 30px;
 }
 
@@ -366,6 +366,7 @@ header .search-bar-container label:hover{
     flex: 1 1 300px;
     border-radius: 10px;
     overflow: hidden;
+    padding: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
 }
 
@@ -419,7 +420,7 @@ header .search-bar-container label:hover{
 .services .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 35px;
     padding-top: 50px;
 }
 
