@@ -392,6 +392,7 @@ header .search-bar-container label:hover{
     font-size: 16px;
     color: #555;
     padding: 10px 0;
+    text-align: justify;
 }
 
 .packages .box-container .box .content .star i{
@@ -412,6 +413,45 @@ header .search-bar-container label:hover{
     color: #555;
     text-decoration: line-through;
 }
+
+/*Services Section*/
+
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 50px;
+}
+
+.services .box-container .box{
+    flex: 10 10 300px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+.services .box-container .box i{
+    padding: 10px;
+    font-size: 50px;
+    color: var(--MainColor);
+}
+
+.services .box-container .box h3{
+    font-size: 20px;
+    color: #222;
+}
+
+.services .box-container .box p{
+    font-size: 16px;
+    color: #555;
+    padding: 10px 0;
+}
+
+.services .box-container .box:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.4);
+}
+
 
 
 /*------------------------------------------------------------------------------------*/
