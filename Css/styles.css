@@ -430,6 +430,7 @@ header .search-bar-container label:hover{
     padding: 10px;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    cursor: pointer;
 }
 
 .services .box-container .box i{
