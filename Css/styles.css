@@ -454,6 +454,60 @@ header .search-bar-container label:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,.4);
 }
 
+/*Gallery Section*/
+
+.gallery .box-container{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.gallery .box-container .box{
+    overflow: hidden;
+    border: 10px solid #fff;
+    border-radius: 5px;
+    flex: 10 10 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    height: 250px;
+    position: relative;
+}
+
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box .content{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,.6);
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.gallery .box-container .box:hover .content{
+    top: 0;
+}
+
+.gallery .box-container .box .content h3{
+    font-size: 25px;
+    color: var(--MainColor);
+}
+
+.gallery .box-container .box .content p{
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+}
+
+
+
 
 
 /*------------------------------------------------------------------------------------*/
