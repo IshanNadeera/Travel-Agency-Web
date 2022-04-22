@@ -506,6 +506,60 @@ header .search-bar-container label:hover{
     padding: 5px;
 }
 
+/*Review Section*/
+
+.review .box-container{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.review .box-container .box{
+    flex: 10 10 300px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    cursor: pointer;
+    background: rgba(0,0,0,.3);
+}
+
+.review .box-container .box img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.review .box-container .box .fa-quote-right{
+    font-size: 20px;
+    color: #fff;
+}
+
+.review .box-container .box .content h3{
+    font-size: 20px;
+    color: var(--MainColor);
+    padding: 5px;
+}
+
+.review .box-container .box .content p{
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+}
+
+
+.review .box-container .box .content i{
+    font-size: 15px;
+    color: #555;
+    padding: 20px 5px 20px 5px;
+}
+
+.review .box-container .box .content .checked{
+    color: #ffb700;
+}
+
+
 
 
 
