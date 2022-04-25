@@ -53,3 +53,11 @@ imgBtn.forEach(btn =>{
        document.querySelector('#img-slider').src = src
    });
 });
+
+//Pre Loader
+
+let loader = document.getElementById("preloader");
+
+window.addEventListener("load", function () {
+    loader.style.display = "none";
+})

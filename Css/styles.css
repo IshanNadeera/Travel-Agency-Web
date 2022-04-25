@@ -393,7 +393,6 @@ header .search-bar-container label:hover{
     font-size: 16px;
     color: #555;
     padding: 10px 0;
-    text-align: justify;
 }
 
 .packages .box-container .box .content .star i{
@@ -705,6 +704,15 @@ header .search-bar-container label:hover{
 
 .footer .credit-text span a:hover{
     text-decoration: underline;
+}
+
+#preloader{
+    background: #fff url("../images/loader.gif") no-repeat center center;
+    background-size:30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 /*------------------------------------------------------------------------------------*/
