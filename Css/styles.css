@@ -431,6 +431,12 @@ header .search-bar-container label:hover{
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.services .box-container .box:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.4);
+    transform: scale(1.05);
 }
 
 .services .box-container .box i{
@@ -450,9 +456,6 @@ header .search-bar-container label:hover{
     padding: 10px 0;
 }
 
-.services .box-container .box:hover{
-    box-shadow: 0 10px 20px rgba(0,0,0,.4);
-}
 
 /*Gallery Section*/
 
@@ -522,7 +525,12 @@ header .search-bar-container label:hover{
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,.3);
     cursor: pointer;
-    background: rgba(0,0,0,.3);
+    background: rgba(68, 141, 152, 0.85);
+    transition: all 0.2s ease-in-out;
+}
+
+.review .box-container .box:hover{
+    transform: scale(1.05);
 }
 
 .review .box-container .box img{
