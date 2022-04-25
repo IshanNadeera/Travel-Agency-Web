@@ -22,6 +22,20 @@
     color: #fff;
 }
 
+body::-webkit-scrollbar{
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--SecondaryColor);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--MainColor);
+    border-radius: 20px;
+    border: 3px solid var(--SecondaryColor);
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -639,6 +653,7 @@ header .search-bar-container label:hover{
     margin: auto;
     color: var(--SecondaryColor);
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .contact .social-icon i:hover{
