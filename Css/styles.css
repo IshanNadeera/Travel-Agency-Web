@@ -648,7 +648,64 @@ header .search-bar-container label:hover{
 }
 
 
+/*Footer Section*/
 
+.footer{
+    background: var(--SecondaryColor);
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer .box-container .box{
+    padding: 10px 0;
+    flex: 10 10 250px;
+}
+
+.footer .box-container .box h3{
+    font-size: 20px;
+    padding: 7px 0;
+    color: var(--MainColor);
+}
+
+.footer .box-container .box p{
+    font-size: 15px;
+    padding: 7px 0;
+    color: #fff;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 15px;
+    padding: 7px 0;
+    color: #dadada;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .credit-text{
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: normal;
+    color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, .4);
+}
+
+.footer .credit-text span a{
+    color: var(--MainColor);
+    text-decoration: none;
+}
+
+.footer .credit-text span a:hover{
+    text-decoration: underline;
+}
 
 /*------------------------------------------------------------------------------------*/
 
