@@ -567,7 +567,85 @@ header .search-bar-container label:hover{
     color: #ffb700;
 }
 
+/*Contact Section*/
 
+.contact .contact-box{
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    text-align: center;
+    gap: 20px;
+}
+
+.contact .contact-box .contact-map{
+    width: 100%;
+    height: auto;
+    flex: 10 10 300px;
+}
+
+.contact .contact-box .contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact .contact-box .contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 20px;
+}
+
+.contact .contact-box .contact-form h3{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: var(--MainColor);
+}
+
+.contact .contact-box .contact-form .contact-form-text{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,.1);
+    color: #666;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.contact .contact-box .contact-form .contact-form-textarea{
+    width: 100%;
+    height: 120px;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,.1);
+    color: #666;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.contact .social-icon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .social-icon i{
+    font-size: 30px;
+    padding: 20px 20px;
+    margin: auto;
+    color: var(--SecondaryColor);
+    transition: all 0.2s ease-in-out;
+}
+
+.contact .social-icon i:hover{
+    transform: scale(1.1);
+    color: var(--MainColor);
+}
 
 
 
